@@ -1,0 +1,18 @@
+p1{
+ color: red;
+ font-family: cursive;
+ text-align: match-parent;
+ font-size: 25px;
+ text-decoration: underline;
+ 
+}
+
+div.intro{
+    box-sizing: border-box;
+    background-color: aqua;
+    color: crimson;
+    text-align: center;
+    border: 2px solid black;
+    font-family: cursive;
+}
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title> website </title>
+    <link rel="stylesheet" href="web18.css">
+    
+</head>
+<body>
+    <nav>
+        <ul CLASS="topnav" id="dropdownclick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="topnav-right"><a href="#Sing-up">Sing Up</a></li>
+            <li class="topnav-right"><a href="#Sing-in">Sing In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftSide-col">
+                    <h1 class="large"> Crazy Radness</h1>
+                    <h1 class="large"> Made for Develpers </h1>
+                </div>
+                <form>
+                    <div class="leftSide-col">
+                        <h2> Username </h2>
+                        <input class="inputbox" name="Username" type="text" placeholder="Username">
+                        <h2> Password </h2>
+                         <input class="inputbox" name="Passord" type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+             <div class="col-6">
+                <div class="rightSide-col">
+                    <div class="videoContainer"> 
+                        <iframe width="500" height="300" src="https://www.youtube.com/embed/eTFxLVyM-g4?si=IjXkb3vTVrhrmBqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <h1 class="section2header"> THE STANDARDS OF AWESOMENESS </h1>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                   <div class="icon">
+                        <img src="https://pbs.twimg.com/profile_images/1232372761747693574/v2_M7KG9_400x400.jpg" >
+                    </div> 
+                    <label>Chat with Me</label>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>       
+                </div>
+            </div>
+             <div class="col-4">
+                <div class="box">
+                   <div class="icon">
+                        <img src="https://pbs.twimg.com/profile_images/1232372761747693574/v2_M7KG9_400x400.jpg" >
+                    </div> 
+                    <label>Build an Empire</label>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>       
+                </div>
+            </div>
+             <div class="col-4">
+                <div class="box">
+                   <div class="icon">
+                        <img src="https://pbs.twimg.com/profile_images/1232372761747693574/v2_M7KG9_400x400.jpg" >
+                    </div> 
+                    <label>Learn to code</label>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>       
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="learnmore"> Learn more</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+       <div class="row">
+            <div class="col-7">
+                <article>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+                </article>
+            </div>
+            <div class="col=5">
+                <div class="slope">
+                    <img src="https://cdn.jim-nielsen.com/ios/512/doo-get-things-done-2016-02-22.png?rf=512">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footsy">
+        <div class="row">
+            <div class="col-3 mobilestack">
+                <h1> Company </h1>
+                <ul>
+                    <li> About </li>
+                    <li> Blogs </li>
+                    <li> Careers </li>
+                </ul>
+            </div>
+              <div class="col-3 mobilestack">
+                <h1> Company </h1>
+                <ul>
+                    <li> About </li>
+                    <li> Blogs </li>
+                    <li> Careers </li>
+                </ul>
+            </div>
+              <div class="col-3 mobilestack">
+                <h1> Company </h1>
+                <ul>
+                    <li> About </li>
+                    <li> Blogs </li>
+                    <li> Careers </li>
+                </ul>
+            </div>
+              <div class="col-3 mobilestack">
+                <h1> Company </h1>
+                <ul>
+                    <li> About </li>
+                    <li> Blogs </li>
+                    <li> Careers </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script>
+        function dropdownMenu(){
+            var x = document.getElementById("dropdownclick");
+            if(x.className === "topnav"){
+                x.className += " responsive";
+                /* change topnav to topnav.responsive */
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+</html>

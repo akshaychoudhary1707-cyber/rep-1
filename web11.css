@@ -1,0 +1,71 @@
+#one{
+    color: red;
+}
+#two{
+    color: blue;
+}
+.two{
+    background-color: coral;
+    color: aquamarine;
+}
+body{
+    background-color: azure;
+}
+html{
+    font-family: monospace;
+    font-style: oblique;
+}
+
+#blue{
+    background-color: blue;
+    font-family: serif;
+    color: chartreuse;
+    background-size: auto;
+}
+
+h1,h2,h3{
+    font-family: cursive;
+    background-color: red;
+    color: aqua;
+    font-stretch: expanded;
+}
+
+#b1{
+    color: #f67004;
+    background-color: white;
+}
+#b2{
+    color: #383BE5;
+    background-color: white;
+}
+#b3{
+    color: #2FEE6C;
+    background-color: white;
+}
+
+#h1{
+    color: orange;
+}
+
+.color{
+    color: greenyellow;
+    background-color: darkblue;
+}
+
+#alertid{
+    color: red;
+}
+
+.alertclass{
+    color: cadetblue;
+}
+
+
+a[target] {
+    background-color: blue;
+    color: white;
+}
+
+.cosmos img{
+    border: 10px 10px solid red;
+}

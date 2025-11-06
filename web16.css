@@ -1,0 +1,11 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+
+body{
+    background-image:repeating-conic-gradient(yellow 45%,red 55%);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+}

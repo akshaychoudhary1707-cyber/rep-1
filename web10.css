@@ -1,0 +1,20 @@
+html{
+    font-family: cursive;
+    font-style: inherit;
+}
+
+body{
+    background:linear-gradient(#22C1C3,#FDBB2D);
+}
+
+p1{
+    color:red;
+    text-shadow: 1px 1px red;
+    border: 2px 2px solid black;
+}
+
+.image{
+    border-radius: 50px;
+    border: 3px solid black;
+}
+

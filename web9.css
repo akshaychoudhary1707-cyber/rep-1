@@ -1,0 +1,43 @@
+h1{
+    color:black;
+    text-align: center;
+}   
+    
+.square{
+    width:100px;
+    height:100px;
+    background-color: aquamarine;
+    margin:auto;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#circle{
+    color:red;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+
+h2{
+    color: darkgreen;
+    text-align: center;
+}
+
+h3{
+    color: blue;
+    text-align: center;
+}
+.pointers{
+    background:linear-gradient(#99ffff, #ff704d );
+    box-shadow: 3px 3px black;
+}
+
+.borderImg{
+    border: 3px solid black;
+}
+
+.classification{
+    background:linear-gradient(#99ffff, #ff704d );
+    box-shadow: 3px 3px black;
+}
