@@ -1,0 +1,14 @@
+:root{
+    --bg1: #666;
+    --bg2: #007;
+    --bg3: #491;
+}
+
+body{
+    background-color: var(--bg3);
+}
+.box1{
+    height: 200px;
+    background-color: var(--bg2);
+    color: #fff;
+}
