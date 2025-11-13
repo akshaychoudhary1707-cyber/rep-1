@@ -1,0 +1,36 @@
+:root{
+    --bg1: yellow;
+    --bg2: lime;
+    --bg3: white;
+    --bg4: white;
+}
+
+body{
+    background-color: gray;
+}
+
+.box1{
+    margin: 20px;
+    height: 200px;
+    background-color: var(--bg3);
+    border: 2px solid black;
+}
+
+.box2{
+    margin: 20px;
+    height: 200px;
+    background-color: var(--bg4);
+    border: 2px solid black;
+}
+
+header{
+    margin: 0px;
+    height: 100px;
+    background-color: var(--bg1);
+}
+
+footer{
+    margin: 0px;
+    height: 100px;
+    background-color: var(--bg2);
+}
