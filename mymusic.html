@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Music</title>
+  <link rel="stylesheet" href="mymusic.css" />
+</head>
+<body>
+  <header class="head">
+    <div class="logo">
+      <img src="C:\Users\aksha\OneDrive\Documents\Music Site\musiclogo.jpg" alt="Logo" />
+    </div>
+    <div class="name">MY MUSIC</div>
+  </header>
+
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Search songs..." />
+    <button id="searchButton">Search</button>
+  </div>
+
+  <main>
+    <center><h1>Songs</h1></center>
+    <ul id="songList">
+      <li>
+        <span class="song-title">Counting Stars - One Republic</span>
+        <button class="play-btn" onclick="playSong('song1')">Play</button>
+        <audio id="song1" src="C:\Users\aksha\OneDrive\Documents\Music Site\countingstars.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Rumours - Neffex</span>
+        <button class="play-btn" onclick="playSong('song2')">Play</button>
+        <audio id="song2" src="C:\Users\aksha\OneDrive\Documents\Music Site\Rumors.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Outside - Calvin Harris</span>
+        <button class="play-btn" onclick="playSong('song3')">Play</button>
+        <audio id="song3" src="C:\Users\aksha\OneDrive\Documents\Music Site\outside.mp3"></audio>
+      </li>
+      
+      <li>
+        <span class="song-title">A Man Without Love</span>
+        <button class="play-btn" onclick="playSong('song4')">Play</button>
+        <audio id="song4" src="C:\Users\aksha\OneDrive\Documents\Music Site\a man without love .mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Aadat</span>
+        <button class="play-btn" onclick="playSong('song5')">Play</button>
+        <audio id="song5" src="C:\Users\aksha\OneDrive\Documents\Music Site\Aadat.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Aarz</span>
+        <button class="play-btn" onclick="playSong('song6')">Play</button>
+        <audio id="song6" src="C:\Users\aksha\OneDrive\Documents\Music Site\Aarz.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Bajrang Baan</span>
+        <button class="play-btn" onclick="playSong('song7')">Play</button>
+        <audio id="song7" src="C:\Users\aksha\OneDrive\Documents\Music Site\Bajrang baan.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Suzume</span>
+        <button class="play-btn" onclick="playSong('song8')">Play</button>
+        <audio id="song8" src="C:\Users\aksha\OneDrive\Documents\Music Site\suzume.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Saiyaara</span>
+        <button class="play-btn" onclick="playSong('song')">Play</button>
+        <audio id="song9" src="C:\Users\aksha\OneDrive\Documents\Music Site\saiyaara.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Tum ho</span>
+        <button class="play-btn" onclick="playSong('song10')">Play</button>
+        <audio id="song10" src="C:\Users\aksha\OneDrive\Documents\Music Site\tum ho.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Tumse hi</span>
+        <button class="play-btn" onclick="playSong('song11')">Play</button>
+        <audio id="song11" src="C:\Users\aksha\OneDrive\Documents\Music Site\tumse he.mp3"></audio>
+      </li>
+       <li>
+        <span class="song-title">Naina</span>
+        <button class="play-btn" onclick="playSong('song12')">Play</button>
+        <audio id="song12" src="C:\Users\aksha\OneDrive\Documents\Music Site\naina.mp3"></audio>
+      </li>
+       <li>
+        <span class="song-title">Wo Lamhe</span>
+        <button class="play-btn" onclick="playSong('song13')">Play</button>
+        <audio id="song13" src="C:\Users\aksha\OneDrive\Documents\Music Site\wo lamhe.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Cry For Me</span>
+        <button class="play-btn" onclick="playSong('song14')">Play</button>
+        <audio id="song14" src="C:\Users\aksha\OneDrive\Documents\Music Site\cry for me.mp3"></audio>
+      </li>
+      <li>
+        <span class="song-title">Jhol</span>
+        <button class="play-btn" onclick="playSong('song15')">Play</button>
+        <audio id="song15" src="C:\Users\aksha\OneDrive\Documents\Music Site\jhol.mp3"></audio>
+      </li>
+    </ul>
+  </main>
+
+  <script>
+    let currentAudio = null;
+
+    function playSong(id) {
+      const audio = document.getElementById(id);
+      const button = event.target;
+
+      if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+        document.querySelectorAll(".play-btn").forEach(btn => btn.textContent = "Play");
+      }
+
+      if (audio.paused) {
+        audio.play();
+        button.textContent = "Pause";
+        currentAudio = audio;
+      } else {
+        audio.pause();
+        button.textContent = "Play";
+      }
+
+      audio.onended = () => {
+        button.textContent = "Play";
+      };
+    }
+
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const songList = document.getElementById('songList');
+
+    searchButton.addEventListener('click', () => {
+      const filter = searchInput.value.toLowerCase();
+      const songs = songList.getElementsByTagName('li');
+      Array.from(songs).forEach(song => {
+        const title = song.querySelector('.song-title').textContent.toLowerCase();
+        song.style.display = title.includes(filter) ? '' : 'none';
+      });
+    });
+
+    // Optional: search on enter key in input box
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        searchButton.click();
+      }
+    });
+  </script>
+</body>
+</html>

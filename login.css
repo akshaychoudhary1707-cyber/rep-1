@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background: linear-gradient(aqua,yellow);
+    background-size: 100% 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+body{
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #2b1055, #7597de);
+    background-size: 400% 400%;
+    animation: bgMove 12s ease infinite;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.head{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: black;
+}
+
+.logo img{
+    height: 48px;
+    border-radius: 20px;
+}
+
+.name{
+    padding-right: 40%;
+    font-size: 48px;
+    color: white;
+}
+
+.box{
+    height: 500px;
+    width: 400px;
+    border: 3px solid black;
+}
+
+.box{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+input[type="text"],input[type="password"]{
+    width: 200px;
+    height: 48px;
+    border: 2px solid black;
+    font-size: 16px;
+    padding: 2px;
+}
+
+button{
+    color: white;
+    background-color: cornflowerblue;
+    padding: 20px;
+    font-size: 30px;
+}
+
